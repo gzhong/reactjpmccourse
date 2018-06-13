@@ -1,0 +1,108 @@
+/* app.css
+** Copyright (c) 2017-2018 NextStep IT Training. All rights reserved.
+**
+** Main application shared CSS.
+*/
+
+/* Specific facet styles */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#app-logo {
+    height: 150px;
+}
+
+header.app-header {
+    background-image: url(../images/header-background.jpg);
+    background-color: White;
+    height: 150px;
+}
+
+footer.app-footer {
+    height: 20pt;
+    text-align: center;
+    font-size: 10pt;
+    font-variant: small-caps;
+    color: Gray;
+}
+
+div.app-content {
+    margin: 10px;
+    min-height: calc(100vh - (150px + 10px + 21px + 20pt)); /* float footer to bottom with header + bottom_margin + top_margin (w/ h1) + footer */
+    text-align: left;
+}
+
+span.welcome-message {
+
+    font-size: 20pt;
+}
+
+span.error {
+    color: red;
+    font-weight: bold;
+    display: block
+}
+
+/* Styles for the lists */
+
+div.classlist {
+    list-style-type: none;
+}
+
+div.list-title {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+div.list-title:before {
+    font-size: 12pt;
+    width: 1em;
+    content: '\25bc'
+}
+
+div.list-title-closed:before {
+    font-size: 12pt;
+    width: 1em;
+    content: '\25b6'
+}
+
+div.list {
+    width: 700px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid orange;
+    border-left: 10px solid orange;
+}
+
+div.list-item {
+    padding: 5px;
+}
+
+table.list {
+    border: none;
+    min-width: 400px;
+}
+
+th.list-name, td.list-name {
+    width: 250px;
+}
+
+th.list-name {
+    text-align: center;
+}
+
+th.list-price, td.list-price {
+    min-width: 150px;
+    max-width: 150px;
+    text-align: right;
+    border-left: 1px solid gray;
+}
+
+th.list-price {
+    text-align: center;
+    font-variant: small-caps;
+}
