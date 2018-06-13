@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import {Provider} from 'react-redux';
+
 import '../Assets/styles/application.css';
 
 import Footer from '../Boilerplate/Footer';
